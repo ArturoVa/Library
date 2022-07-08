@@ -32,6 +32,32 @@ body{
 
 #body{
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#body .button-container{
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    min-height: 25%;
+
+    
+}
+#body button#add-book{
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 2em;
+    font-family:  Helvetica, sans-serif;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+#body button#add-book:hover{
+    background: #C65D7B;
+    color: white;
+    
 }
 #close, #close img{
     height: 20px;
@@ -47,7 +73,7 @@ body{
 
 
 .popUp{
-    display: block;
+    display: none;
     position: absolute;
     align-self: center;
     justify-content: center;
@@ -92,4 +118,32 @@ body{
     margin-left: 10px;
     width: 15px;
     height: 15px;
+}
+#card-display{
+    display: flex;
+    align-self: center;
+    max-width: 80%;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #C65D7B;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.951);
+    padding: 13px;
+    box-shadow: 2px 3px 1px grey;
+    max-height: ;
+    height: fit-content;
+    overflow-x: auto;
+    transition: 0.4s;
+}
+
+
+.card:hover{
+    transform: scale(1.5);
 }
