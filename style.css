@@ -137,7 +137,6 @@ body{
     color: rgba(255, 255, 255, 0.951);
     padding: 13px;
     box-shadow: 2px 3px 1px grey;
-    max-height: ;
     height: fit-content;
     overflow-x: auto;
     transition: 0.4s;
